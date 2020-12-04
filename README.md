@@ -3,7 +3,7 @@ A python3 port of the open source OpenSTV, https://github.com/Conservatory/opens
 
 This repository does not aim to add functionality, or even to reach true feature parity with the original OpenSTV. The aim is to maintain python3 compatibility with the command line usage of OpenSTV as python 2 has now reached end-of-life.
 
-To use:
+##To use:
 
 Clone this repository
 
@@ -13,7 +13,7 @@ You may need to install the future package, eg by running `python3 -m pip instal
 
 See below, or the included Help.html file, for information on ballot file formatting.
 
-Flags:
+###Flags:
 
 You can use flags to decide the report format, and the counting method.
 
@@ -43,7 +43,7 @@ Counting methods available:
     WarrenQXSTV
     WarrenSTV
     
-Report formats available:
+###Report formats available:
 
     CsvReport
     HtmlReport
@@ -51,13 +51,13 @@ Report formats available:
     TextReport
     YamlReport
     
-Depending on your use case, you may wish to change the default report format. YOu can set this in line 57 of runElection.py:
+Depending on your use case, you may wish to change the default report format. You can set this in line 57 of runElection.py:
 
 `reportformat = "TextReport"`
 
 Simply change TextReport to the desired report format. It is also possible to customise the report formats by modifying the files in ReportPlugins.
 
-Ballot file format:
+##Ballot file format:
 
     4 2          # four candidates are competing for two seats
     -2           # Bob (candidate 2, as listed below) has withdrawn (optional)
