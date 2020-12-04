@@ -1,7 +1,7 @@
 # openstv
 A python3 port of the open source OpenSTV, https://github.com/Conservatory/openstv
 
-This repository does not aim to add functionality, or even to reach true feature parity with the original OpenSTV. The aim is to maintain python3 compatibility with the command line usage of OpenSTV as python 2 has now reached end-of-life.
+This repository does not aim to add functionality, or even to reach true feature parity with the original OpenSTV. The aim is to maintain "good enough" python3 compatibility with the command line usage of OpenSTV as python 2 has now reached end-of-life.
 
 ## To use:
 
