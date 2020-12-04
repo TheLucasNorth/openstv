@@ -7,7 +7,7 @@ This repository does not aim to add functionality, or even to reach true feature
 
 Clone this repository
 
-Run the `runElection.py` file from the command line, adding flags as needed. EG, `python3 runElection.py -r TextReport ERS97STV "path to ballot file"`
+Run the `runElection.py` file from the command line, adding flags as needed. EG, `python3 runElection.py ERS97STV "path to ballot file"`
 
 You may need to install the future package, eg by running `python3 -m pip install future`
 
@@ -17,7 +17,7 @@ See below, or the included Help.html file, for information on ballot file format
 
 You can use flags to decide the report format, and the counting method.
 
-Counting methods available:
+#### Counting methods available:
 
     Approval
     Borda
@@ -43,7 +43,9 @@ Counting methods available:
     WarrenQXSTV
     WarrenSTV
     
-### Report formats available:
+The counting method must be stated before the path to the ballot file, and is required.
+    
+#### Report formats available:
 
     CsvReport
     HtmlReport
@@ -51,13 +53,15 @@ Counting methods available:
     TextReport
     YamlReport
     
+The report format is set by using the flag `-r ReportFormat`, and should be declared before the counting method. For example, `python3 runElection.py -r HtmlReport ERS97STV "path to ballot file"`. If the flag is not provided, the results will be presented in the default format.
+    
 Depending on your use case, you may wish to change the default report format. You can set this in line 57 of runElection.py:
 
 `reportformat = "TextReport"`
 
 Simply change TextReport to the desired report format. It is also possible to customise the report formats by modifying the files in ReportPlugins.
 
-## Ballot file format:
+### Ballot file format:
 
     4 2          # four candidates are competing for two seats
     -2           # Bob (candidate 2, as listed below) has withdrawn (optional)
