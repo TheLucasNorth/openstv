@@ -26,7 +26,7 @@ You can use flags to decide the report format, and the counting method.
     Condorcet
     Coombs
     ERS97STV
-    FTSTV
+    FTSTV // not currently working in python3
     GPCA2000STV
     IRV
     MeekNZSTV
@@ -35,8 +35,8 @@ You can use flags to decide the report format, and the counting method.
     MinneapolisSTV
     NIrelandSTV
     QPQ
-    RTSTV
-    SNTV
+    RTSTV // not currently working in python3
+    SNTV // not currently working in python3
     SanFranciscoRCV
     ScottishSTV
     SuppVote
